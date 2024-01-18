@@ -1,0 +1,9 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="123456"/>
+  <name>
+    <given value="John"/>
+    <family value="Doe"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1980-01-01"/>
+</Patient>

@@ -1,0 +1,17 @@
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# IDE-specific
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Docker
+.DS_Store
+.dockerignore
+
+# Miscellaneous
+*.log
+
