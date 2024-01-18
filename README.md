@@ -87,6 +87,14 @@ The conversion process involves the following steps:
 
 The transformed FHIR data is sent to a FHIR server running on OpenShift, deployed as part of a separate, standalone deployment.
 
+## Viewing the Result
+
+After sending the CDA data to the `direct:cdaToFhir` endpoint, check the final result. A screenshot of the final output is provided in the repository. 
+
+Output shown below.
+
+![FHIR_HTTP_200](https://github.com/wcushen/camel-cda-fhir-converter/main/200_screenshot.img?raw=true)
+
 ## Contributing
 
 Feel free to contribute to this project by opening issues or submitting pull requests. Your contributions are highly appreciated.
