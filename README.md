@@ -93,7 +93,7 @@ After sending the CDA data to the `direct:cdaToFhir` endpoint, check the final r
 
 Output shown below.
 
-![FHIR_HTTP_200](https://github.com/wcushen/camel-cda-fhir-converter/main/200_screenshot.img?raw=true)
+![FHIR_HTTP_200](https://github.com/wcushen/camel-cda-fhir-converter/main/200_screenshot.png?raw=true)
 
 ## Contributing
 
