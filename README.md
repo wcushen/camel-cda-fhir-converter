@@ -9,6 +9,7 @@ Before running the converter, ensure you have the following prerequisites instal
 - [Java Development Kit (JDK)](https://adoptopenjdk.net/)
 - [Apache Maven](https://maven.apache.org/)
 - [Podman](https://podman.io/) (for building and running the container)
+- [FHIR Server](https://hapi.fhir.org/) (HAPI FHIR and others offer sandbox/test environments)
 
 ## Getting Started
 
