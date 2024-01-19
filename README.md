@@ -34,8 +34,6 @@ podman build -t camel-cda-fhir-converter .
 podman run -p 8080:8080 -e "FHIR_SERVER_URL=https://your-fhir-server-url" -d camel-cda-fhir-converter
 ```
 
-The Camel route will be accessible at http://localhost:8080/camel.
-
 ## Usage 
 
 To convert CDA XML data to FHIR, use the provided Camel route. The conversion process is triggered by sending CDA data to the `direct:cdaToFhir` endpoint.
@@ -82,15 +80,15 @@ The conversion process involves the following steps:
 
 1. **CDA XML Input**: The CDA XML data is provided as input.
 2. **Apache Camel Route**: The Camel route processes the CDA data using a processor that converts it into FHIR format.
-3. **FHIR Output**: The transformed FHIR data is made available at the specified Camel endpoint ([http://localhost:8080/camel](http://localhost:8080/camel)).
+3. **FHIR Output**: The transformed FHIR data is made available at the specified FHIR endpoint (in this instance, under the Patient resource).
 
 ## Targeted FHIR Server
 
-The transformed FHIR data is sent to a FHIR server running on OpenShift, deployed as part of a separate, standalone deployment.
+The transformed FHIR data is sent to a FHIR server. In our experiments, this has been running on OpenShift, deployed as part of a separate, standalone deployment that can be found [here](https://github.com/yohanswanepoel/hapi-fhir-jpaserver-starter/blob/master/k8s/app.yml).
 
 ## Viewing the Result
 
-After sending the CDA data to the `direct:cdaToFhir` endpoint, check the final result. A screenshot of the final output is provided in the repository. 
+After sending the CDA data to the `direct:cdaToFhir` endpoint, check the final result.
 
 Output shown below.
 
