@@ -31,7 +31,7 @@ In this Podman run command, we are passing an environment variable FHIR_SERVER_U
 
 ```bash
 podman build -t camel-cda-fhir-converter .
-podman run -p 8080:8080 -e "FHIR_SERVER_URL=https://your-fhir-server-url" -d camel-cda-fhir-converter
+podman run -e "FHIR_SERVER_URL=https://your-fhir-server-url" -d camel-cda-fhir-converter
 ```
 
 ## Usage 
