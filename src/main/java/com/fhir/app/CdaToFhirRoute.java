@@ -8,8 +8,8 @@ public class CdaToFhirRoute extends RouteBuilder {
     public void configure() throws Exception {
         from("direct:cdaToFhir")
             .log("Converting CDA to FHIR")
-            .to("fhir:create/resource?inBody=resourceAsString&serverUrl=https://fhir-route-hapi-fhir.apps.cluster-d6c6j.dynamic.redhatworkshops.io/fhir&fhirVersion=R4")
+	    .setProperty("fhir.server.url", simple("{{FHIR_SERVER_URL}}"))
+            .to("fhir:create/resource?inBody=resourceAsString&serverUrl={{fhir.server.url}}&fhirVersion=R4")
             .log("Conversion complete");
     }
 }
-
